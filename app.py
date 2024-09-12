@@ -9,12 +9,12 @@ CORS(app)
 
 cat=[{"name":"betty","age":20},{"name":"alex","age":21},{"name":"shadi","age":15}]
 
-@app.route('/')
-def hello():
-    return cat
-
 @app.route('/test')
 def test():
+    return cat
+
+@app.route('/')
+def hello():
     return "hello"
  
  

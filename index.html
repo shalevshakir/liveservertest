@@ -11,7 +11,7 @@
 <body>
     <div id="display"></div>
     <script>
-        const SERVER = "http://127.0.0.1:5000/"
+        const SERVER = "https://liveservertest-p0b6.onrender.com/"
         axios(SERVER).then(res => display.innerHTML ="<select id='cats' onchange='samp_select()'>" + res.data.map(cat => `<option value=${cat.catid}>
        
             ${cat.name}
